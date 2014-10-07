@@ -13,3 +13,88 @@ img {
 section {
 	padding: 10rem 0;
 }
+
+.sun {
+	width: 300px;
+}
+
+.sun-section {
+	background: transparent url("../img/mars-pano.jpg") no-repeat center top;
+	background-size: cover;
+}
+
+.dipper {
+	width: 200px;
+	opacity: 0;
+}
+
+.js-dipper-fade {
+	-webkit-animation: dipper-fade 1s linear forwards;
+}
+/*
+animation-fill-mode: forwards;
+Will tell the animation to stay at its end state after complete
+*/
+
+@-webkit-keyframes dipper-fade {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.shuttle1 {
+	width: 200px;
+	opacity: 0;
+	position: relative;
+	top: 100px;
+}
+
+.shuttle1-section {
+	background-color: #f6a500;
+}
+
+.js-shuttle1-fade {
+	-webkit-animation: shuttle1-fade 1s linear forwards;
+}
+
+@-webkit-keyframes shuttle1-fade {
+	0% {
+		opacity: 0;
+		top: 50px;
+	}
+	100% {
+		opacity: 1;
+		top: 0;
+	}
+}
+
+.ship {
+	display: inline-block;
+	width: 200px;
+	top: 100px;
+	position: relative;
+}
+
+.ship-section {
+	background: transparent url("../img/kasei-valles-canyons.jpg") no-repeat center top;
+	background-size: cover;
+	text-align: center;
+}
+
+.js-ship-fade {
+	-webkit-animation: ship-fade 1s linear forwards;
+}
+
+@-webkit-keyframes ship-fade {
+	0% {
+		opacity: 0;
+		top: 50px;
+	}
+	100% {
+		opacity: 1;
+		top: 0;
+	}
+}
